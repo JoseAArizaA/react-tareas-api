@@ -16,7 +16,10 @@ function TaskList() {
   }, []);
 
   function borrarTarea(idTarea : number) :void {
+    // Pedir a axios borrar la tarea
+    // Cuando se borre, modificar tareas para quitar la tarea borrada 
     alert(idTarea);
+
   }
 
   return (
