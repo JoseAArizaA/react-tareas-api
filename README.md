@@ -41,12 +41,12 @@ La app se ejecuta con **Vite** y realiza llamadas a una API REST simulada usando
 
 ## Levantar la API (json-server)
 
-Este proyecto incluye el fichero `db.json` en la raíz. ([GitHub][1])
+Este proyecto incluye el fichero `db.json` en la raíz.
 
 ### Opción A: usar json-server con npx (recomendado para clase)
 
 ```bash
-npx json-server --watch db.json --port 3001
+npx json-server db.json
 ```
 
 * API disponible en: `http://localhost:3001`
@@ -57,7 +57,7 @@ npx json-server --watch db.json --port 3001
 
 ```bash
 npm i -g json-server
-json-server --watch db.json --port 3001
+json-server db.json
 ```
 
 ## Levantar el frontend (React + Vite)
@@ -77,7 +77,7 @@ Por defecto, Vite suele servir en:
 1. Terminal 1 (API):
 
    ```bash
-   npx json-server --watch db.json --port 3001
+   npx json-server db.json
    ```
 
 2. Terminal 2 (frontend):
