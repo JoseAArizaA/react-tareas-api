@@ -17,7 +17,10 @@ function TaskList() {
   }, []);
 
   function borrarTarea(idTarea : number) :void {
+    // Pedir al servicio borrar la tarea
+    // Cuando se borre, modificar tareas para quitar la tarea borrada 
     alert(idTarea);
+
   }
 
   return (
@@ -26,7 +29,7 @@ function TaskList() {
       {!cargando && (
         <ul>
           {tareas &&
-            tareas.map((tarea) => <li key={tarea.id}>{tarea.title} <button className="edit" onClick={() => borrarTarea(tarea.id)}>❌</button></li>)}
+            tareas.map((tarea) => <li key={tarea.id}>{tarea.title} <button className="delete" onClick={() => borrarTarea(tarea.id)}>❌</button></li>)}
         </ul>
       )}
     </>
