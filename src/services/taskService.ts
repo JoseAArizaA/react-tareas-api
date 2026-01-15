@@ -11,7 +11,6 @@ export const taskService = {
         });
     },
     delete(id :number) : Promise<void> {
-        // petición AXIOS para borrar la tarea
-        return axios.delete<void>(`${API_URL}/${id}`).then(response => response.data);
+        return axios.delete<void>(API_URL + "/" + id).then(() => {})
     }
 };
