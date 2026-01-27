@@ -10,7 +10,9 @@ export default function AppLayout() {
                         <NavLink to="/tasks">Tareas</NavLink>
                         <NavLink to="/about">About</NavLink>
                         <NavLink to="/profile">Perfil</NavLink>
-                        <NavLink to="/login">Login</NavLink>
+                        {/* TODO: Mostrar login no ha iniciado sesión */}
+                        <NavLink to="/login">Login</NavLink> 
+                        {/* TODO: Si ha iniciado sesión, mostrar nombre y botón con clase nav-btn para cerrar sesión */}
                     </nav>
                 </div>
             </header>
