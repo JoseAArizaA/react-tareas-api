@@ -411,6 +411,12 @@ form button.cancel:hover {
   border-left: 5px solid #d93025;
 }
 
+.toast.success {
+  background-color: #fdecea;
+  color: #15611b;
+  border-left: 5px solid #25d952;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(120%);
