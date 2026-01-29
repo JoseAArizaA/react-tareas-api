@@ -12,7 +12,7 @@ export default function TaskDetailPage() {
     if (id) {
       taskService.get(parseInt(id)).then((tarea) => setTareaSeleccionada(tarea)).catch(() => {setTareaSeleccionada(null)}).finally(() => setCargando(false))
     }
-  }, [])
+  }, [id])
 
   if (!id) {
     return <p>No se ha proporcionado una ID</p>
@@ -23,7 +23,7 @@ export default function TaskDetailPage() {
   return (<section className="task-hero">
     <div className="task-hero-top">
       <Link className="link" to="/tasks">← Volver</Link>
-      {!cargando && tareaSeleccionada && <span className={tareaSeleccionada.completed ? "badge badge-ok" : "badge badge-pending"}> {/* TODO: poner clase badge-ok o badge-pending dependiendo de si está completa o no" */}
+      {!cargando && tareaSeleccionada && <span className={tareaSeleccionada.completed ? "badge badge-ok" : "badge badge-pending"}>
         {tareaSeleccionada.completed ? "COMPLETADA" : "PENDIENTE"}</span>}
     </div>
     {!cargando && tareaSeleccionada && <>

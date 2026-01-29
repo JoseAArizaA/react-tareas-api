@@ -69,6 +69,7 @@ export default function TasksPage() {
       /> 
 
       <TaskForm
+        key = {tareaSeleccionada?.id ?? null}
         anadirTarea={anadirTarea}
         peticionEnProgreso={peticionEnProgreso}
         tareaSeleccionada={tareaSeleccionada}

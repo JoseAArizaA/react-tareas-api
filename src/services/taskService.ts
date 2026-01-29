@@ -1,4 +1,3 @@
-import axios from 'axios';
 import type { Task } from '../types/Task';
 import { http } from './http';
 

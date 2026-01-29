@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAuth } from "../auth/authContext";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { AuthService } from "../services/authService";
 
 interface DatosRegistro {
