@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage'
 import TaskDetailPage from './pages/TaskDetailPage'
 import LoginPage from './pages/LoginPage'
 import ProtectedRoute from './routing/ProtectedRoute'
+import RegisterPage from './pages/RegisterPage'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="*" element={<p className='card'>La página indicada no existe</p>} />
       </Route>
     </Routes>
